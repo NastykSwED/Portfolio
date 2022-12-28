@@ -1,0 +1,54 @@
+@use './base';
+@use './layouts';
+@use './components';
+@use './pages';
+@use './utils';
+@use './themes';
+
+:root {
+	--primary-clr: #ffcd42;
+	--error-clr: rgb(255, 0, 0);
+
+	/*=== Text Colors ===*/
+	--title-clr: rgba(255, 255, 255, 1);
+	--logo-clr: rgba(0, 0, 0, 1);
+	--link-clr: rgba(0, 0, 0, 0.7);
+	--secondary-text-clr: hsl(0, 0%, 35%);
+
+	/*=== Bg Colors===*/
+	--bg-clr: rgba(255, 255, 255, 1);
+	--bg-clr-dark: rgba(0, 0, 0, 1);
+
+	/*=== Border Colors===*/
+	--border-clr: rgba(0, 0, 0, 1);
+
+	/*=== Fonts Weights ===*/
+	--font-base: 400;
+	--font-medium: 500;
+	--font-semi-bold: 600;
+
+	/*=== Z index ===*/
+	--z-fixed: 100;
+
+	/*=== Widths ===*/
+	--mx-w-footer: 1600px;
+	--mx-w-wrapNav: 1450px;
+	--mx-w-homeSection-content: 700px;
+	--mx-w-projectsSection: 1125px;
+
+	--avatar-width: 180px;
+
+	/*=== Heights ===*/
+	--avatar-height: 160px;
+
+	/*=== Box Shadows ===*/
+	--box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.15);
+	--card-shadow: 0 0 0.5rem 0.1rem rgba(0, 0, 0, 0.1);
+	--image-shadow: 0 4px 2px -4px rgba(255, 255, 255, 1);
+
+	/*=== Medias Queries ===*/
+	--sm-width: 640px;
+	--md-width: 768px;
+	--lg-width: 1024px;
+	--xl-width: 1280px;
+}

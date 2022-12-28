@@ -1,0 +1,52 @@
+@use '../../utils' as *;
+
+.Button {
+	cursor: pointer;
+	display: inline-flex;
+	align-items: center;
+	padding: 1rem 1.5rem;
+	border-radius: 12px;
+	color: var(--title-clr);
+	font-size: 1rem;
+	font-weight: var(--font-medium);
+	transition: 0.3s all ease-in-out;
+	background-color: var(--bg-clr-dark);
+
+	&:hover {
+		transform: scale(1.05);
+	}
+
+	@include mediaQuery(640px) {
+		padding: 0.8rem 1.3rem;
+		font-size: 0.95rem;
+	}
+
+	&--outline {
+		padding: 0.6rem 1rem;
+		color: var(--logo-clr);
+		background-color: var(--bg-clr);
+		transition: 0.5s all ease-in-out;
+	}
+
+	&--primary {
+		padding: 0.6rem 1rem;
+		color: rgba(0, 0, 0, 1);
+		background-color: var(--primary-clr);
+		margin: 0.5rem 1rem;
+
+		&:hover {
+			transform: none;
+		}
+
+		@include mediaQuery(918px) {
+			width: 100%;
+			justify-content: center;
+		}
+	}
+
+	&-Icon {
+		margin-top: 0.2rem;
+		margin-left: 0.4rem;
+		font-size: 1.1rem;
+	}
+}

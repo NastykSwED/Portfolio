@@ -1,0 +1,40 @@
+@use '../../utils/' as *;
+
+.re-Modal {
+	&CV {
+		position: absolute;
+		min-height: 4rem;
+		min-width: 5rem;
+		top: 50%;
+		left: 50%;
+
+		border-radius: 5px;
+		transition: 0.3s;
+		box-shadow: var(--box-shadow);
+		text-transform: uppercase;
+		background-color: var(--bg-clr);
+
+		&-wrapButtons {
+			padding: 1.2rem;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+
+		&.isOpen {
+			animation: openModal 0.4s ease-out forwards;
+		}
+
+		&-link {
+			margin: 0.3rem 0;
+			color: var(--link-clr);
+			font-weight: var(--font-semi-bold);
+			transition: 0.3s all ease-in-out;
+
+			&:hover {
+				transform: scale(1.05);
+			}
+		}
+	}
+}

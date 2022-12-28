@@ -1,0 +1,32 @@
+@use '../utils' as *;
+
+.re- {
+	&Header {
+		position: fixed;
+		z-index: var(--z-fixed);
+		top: 0;
+		left: 0;
+		right: 0;
+		background-color: var(--bg-clr);
+		box-shadow: var(--box-shadow);
+
+		&-wrapNavbar {
+			display: flex;
+			max-width: var(--mx-w-wrapNav);
+			margin: auto;
+			align-items: center;
+			justify-content: space-between;
+			padding: 1rem 2rem;
+		}
+
+		&-logo {
+			color: var(--logo-clr);
+			user-select: none;
+      transition: 0.3s all ease-in-out;
+
+			@include mediaQuery(640px) {
+				font-size: 1.7rem;
+			}
+		}
+	}
+}

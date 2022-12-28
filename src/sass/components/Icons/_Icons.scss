@@ -1,0 +1,18 @@
+.Icon {
+	&--AiOutlineSend {
+		font-size: 1.3rem;
+	}
+
+	&--moon {
+		transition: 0.6s all;
+		transform: rotate(15deg);
+	}
+
+	&--sun {
+		transition: 0.6s all;
+	}
+
+	&.isActive {
+		transform: rotate(250deg);
+	}
+}

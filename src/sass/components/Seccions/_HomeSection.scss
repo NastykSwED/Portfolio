@@ -1,0 +1,88 @@
+@use '../../utils' as *;
+
+.re- {
+	&Main-HomeSection {
+		display: flex;
+		min-height: 100vh;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin-top: 2rem;
+		margin-bottom: 3rem;
+		padding: 0 1rem;
+		text-align: center;
+	}
+
+	&HomeSection {
+		&-wrapAvatar {
+		}
+
+		&-avatar {
+			width: var(--avatar-width);
+			height: var(--avatar-height);
+			border-radius: 50%;
+			object-fit: cover;
+			object-position: -2px -5px;
+			animation: Bounce 1s alternate infinite;
+			box-shadow: var(--card-shadow);
+		}
+		&-content {
+			max-width: var(--mx-w-homeSection-content);
+			margin-top: 1rem;
+			color: var(--logo-clr);
+			transition: 0.3s all ease-in-out;
+		}
+		&-title {
+			max-width: max-content;
+			font-size: 2.5rem;
+			font-weight: bold;
+			padding-right: 0.5rem;
+
+			overflow: hidden; /* Ensures the content is not revealed until the animation */
+			border-right: 0.15em solid var(--primary-clr); /* The typwriter cursor */
+			white-space: nowrap; /* Keeps the content on a single line */
+			margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+			animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+
+			@include mediaQuery(464px) {
+				font-size: 1.75rem;
+			}
+
+			@include min-maxMediaQuery(464px, 1024px) {
+				font-size: 2.2rem;
+			}
+		}
+
+		&-subTitle {
+			margin-top: 1rem;
+			font-size: 1.8rem;
+			font-weight: var(--font-medium);
+
+			@include mediaQuery(464px) {
+				font-size: 1.25rem;
+			}
+
+			@include min-maxMediaQuery(464px, 1024px) {
+				font-size: 1.6rem;
+			}
+		}
+
+		&-description {
+			margin-top: 1rem;
+			font-size: 1.2rem;
+			font-weight: var(--font-base);
+
+			@include mediaQuery(464px) {
+				font-size: 0.9rem;
+			}
+
+			@include minMediaQuery(464px) {
+				font-size: 1rem;
+			}
+		}
+
+		&-wrapButton {
+			margin-top: 1.5rem;
+		}
+	}
+}

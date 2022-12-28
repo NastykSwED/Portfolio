@@ -1,0 +1,38 @@
+@use '../utils' as *;
+
+.re- {
+	&Hamburger {
+		display: none;
+		padding: 0.2rem 0.4rem;
+		cursor: pointer;
+
+		@include mediaQuery(918px) {
+			display: block;
+		}
+
+		&.isActive {
+			border: 1px dotted gray;
+
+			& .re-Hamburger-bar:nth-child(2) {
+				opacity: 0;
+			}
+			& .re-Hamburger-bar:nth-child(1) {
+				transform: translateY(6px) rotate(45deg);
+			}
+
+			& .re-Hamburger-bar:nth-child(3) {
+				transform: translateY(-10px) rotate(-45deg);
+			}
+		}
+
+		&-bar {
+			display: block;
+			width: 28px;
+			height: 4px;
+			margin: 4px auto;
+			border-radius: 30px;
+			background-color: var(--bg-clr-dark);
+			transition: all 0.3s ease-in-out;
+		}
+	}
+}

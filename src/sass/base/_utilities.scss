@@ -1,0 +1,18 @@
+@use '../utils' as *;
+
+.u- {
+	/** Icons Utilities **/
+	&CFI {
+		font-size: 2.3rem;
+	}
+	&SImI {
+		font-size: 2.3rem;
+	}
+	&PCMI {
+		font-size: 1.8rem;
+
+		@include mediaQuery(964px) {
+			font-size: 1.5rem;
+		}
+	}
+}
