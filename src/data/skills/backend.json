@@ -1,0 +1,22 @@
+[
+	{
+		"name": "NodeJS",
+		"iconPackName": "simple-icons",
+		"iconName": "nodedotjs"
+	},
+	{
+		"name": "NestJS",
+		"iconPackName": "simple-icons",
+		"iconName": "nestjs"
+	},
+	{
+		"name": "Firebase",
+		"iconPackName": "simple-icons",
+		"iconName": "firebase"
+	},
+	{
+		"name": "MongoDB",
+		"iconPackName": "simple-icons",
+		"iconName": "mongodb"
+	}
+]

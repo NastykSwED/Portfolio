@@ -16,7 +16,7 @@
 		transform: scale(1.05);
 	}
 
-	@include mediaQuery(640px) {
+	@include maxMediaQuery(640px) {
 		padding: 0.8rem 1.3rem;
 		font-size: 0.95rem;
 	}
@@ -38,15 +38,15 @@
 			transform: none;
 		}
 
-		@include mediaQuery(918px) {
+		@include maxMediaQuery(918px) {
 			width: 100%;
 			justify-content: center;
+			margin-right: 0;
+			margin-left: 0;
 		}
 	}
 
 	&-Icon {
-		margin-top: 0.2rem;
 		margin-left: 0.4rem;
-		font-size: 1.1rem;
 	}
 }

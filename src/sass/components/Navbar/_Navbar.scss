@@ -7,7 +7,7 @@
 		text-transform: uppercase;
 		background-color: var(--bg-clr);
 
-		@include mediaQuery(918px) {
+		@include maxMediaQuery(918px) {
 			width: 25rem;
 			position: fixed;
 			top: 5.2rem;
@@ -29,7 +29,6 @@
 					padding: 0;
 					text-align: center;
 
-				
 					&Item {
 						width: 100%;
 						padding: 0.5rem 0;
@@ -42,7 +41,7 @@
 			}
 		}
 
-		@include mediaQuery(478px) {
+		@include maxMediaQuery(478px) {
 			width: calc(87% - 10px);
 		}
 
@@ -69,7 +68,7 @@
 			position: relative;
 			transition: 0.3s;
 
-			@include mediaQuery(918px) {
+			@include maxMediaQuery(918px) {
 				width: 100%;
 			}
 		}
@@ -79,4 +78,3 @@
 		}
 	}
 }
-

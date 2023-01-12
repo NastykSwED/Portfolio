@@ -1,0 +1,21 @@
+<div class='re-Hamburger'>
+	<span class='re-Hamburger-bar'></span>
+	<span class='re-Hamburger-bar'></span>
+	<span class='re-Hamburger-bar'></span>
+</div>
+
+<script>
+	const hamburgerElement = document.querySelector(
+		'.re-Hamburger'
+	) as HTMLElement;
+	const headerNavbarElement = document.querySelector(
+		'.re-Navbar'
+	) as HTMLElement;
+
+	const handleClick = () => {
+		hamburgerElement.classList.toggle('isActive');
+		headerNavbarElement.classList.toggle('isActive');
+	};
+
+	hamburgerElement.addEventListener('click', handleClick);
+</script>

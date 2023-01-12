@@ -1,0 +1,21 @@
+---
+import { Icon } from 'astro-icon';
+
+interface Props {
+	text: string;
+	variant?: string;
+	type?: 'button' | 'submit' | 'reset' | undefined;
+	iconName: string;
+	iconPackName: string;
+	iconUtility?: string;
+}
+const { text, type, variant, iconPackName, iconName, iconUtility } =
+	Astro.props;
+---
+
+<button class={variant ? `Button Button--${variant}` : 'Button'} type={type}
+	>{text}
+	<span class={`Button-Icon ${iconUtility}`}>
+		<Icon pack={iconPackName} name={iconName} class={iconUtility} />
+	</span>
+</button>

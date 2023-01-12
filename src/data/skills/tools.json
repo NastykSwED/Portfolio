@@ -1,0 +1,46 @@
+[
+	{
+		"name": "Git",
+		"iconPackName": "simple-icons",
+		"iconName": "git"
+	},
+	{
+		"name": "GitHub",
+		"iconPackName": "simple-icons",
+		"iconName": "github"
+	},
+	{
+		"name": "Vite",
+		"iconPackName": "simple-icons",
+		"iconName": "vite"
+	},
+	{
+		"name": "Vitest",
+		"localPath": true
+	},
+	{
+		"name": "Testing Library",
+		"iconPackName": "simple-icons",
+		"iconName": "testinglibrary"
+	},
+	{
+		"name": "Pnpm",
+		"iconPackName": "simple-icons",
+		"iconName": "pnpm"
+	},
+	{
+		"name": "Json",
+		"iconPackName": "simple-icons",
+		"iconName": "json"
+	},
+	{
+		"name": "Markdown",
+		"iconPackName": "simple-icons",
+		"iconName": "markdown"
+	},
+	{
+		"name": "Postman",
+		"iconPackName": "simple-icons",
+		"iconName": "postman"
+	}
+]

@@ -1,31 +1,40 @@
 # My Portfolio
 
-Welcome to my personal Portfolio. This is the first version of my portfolio. I hope you like it! 
+Welcome to my Portfolio!
 
-## Tech Stack
+This Portfolio has been created using Astro, a modern and powerful web development framework. Here you will find a selection of my work, including personal and professional projects that I've developed over the years. I'm very proud of my work and I hope you enjoy browsing through it.
 
-**Frontend** 
-<div aling=center>
+Thank you for visiting my Portfolio, if you have any questions or comments, please don't hesitate to contact me.
+
+Enjoy your visit!
+
+<br/>
+
+# Tech Stack
+
+**Frontend**
+
+<div>
   <img src="https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white" title="TypeScript" alt="TypeScript"/>&nbsp;
   <img src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB" title="ReactJS" alt="ReactJS"/>&nbsp;
   <img src="https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white" title="Sass" alt="Sass"/>&nbsp;
+  <img src='https://img.shields.io/static/v1?style=for-the-badge&message=Astro&color=FF5D01&logo=Astro&logoColor=FFFFFF&label=' title="Astro" alt="Astro" />&nbsp;
 </div>
 
-
-**Testing:**
-<div aling=center>
-  <img src="https://img.shields.io/badge/-jest-%23C21325?style=for-the-badge&logo=jest&logoColor=white" title="Jest" alt="Jest"/>&nbsp;
-  <img src="https://img.shields.io/badge/-TestingLibrary-%23E33332?style=for-the-badge&logo=testing-library&logoColor=white" title="Testing Library" alt="Testing Library"/>&nbsp;
-</div>
+<br/>
 
 **Hosting**
-<div aling=center>
+
+<div>
   <img src="https://img.shields.io/badge/netlify-%23000000.svg?style=for-the-badge&logo=netlify&logoColor=#00C7B7" title="Netlify" alt ="Netlify"/>&nbsp;
   <img src="" title="" alt =""/>&nbsp;
 </div>
 
+<br/>
 
-## Run Locally
+# Run Locally
+
+<br/>
 
 Clone the project
 
@@ -51,14 +60,8 @@ Start the server
   pnpm run dev
 ```
 
-## Preview Portfolio
+<br/>
 
-<img src="https://raw.githubusercontent.com/NastykSwED/Portfolio/master/src/assets/screenshot.jpg">
+# Preview Portfolio
 
-## Running Tests
-
-To run tests, run the following command
-
-```bash
-  pnpm run test
-```
+<img src="https://raw.githubusercontent.com/NastykSwED/Portfolio/master/public/preview.png">

@@ -1,0 +1,107 @@
+---
+import '../sass/styles.scss';
+import '@fontsource/raleway';
+import { SEO } from 'astro-seo';
+---
+
+<!DOCTYPE html>
+<html lang='en' data-theme='light'>
+	<head>
+		<!-- Astro Lover -->
+		<SEO
+			charset='UTF-8'
+			title='Ronald Torres | Front End Developer'
+			description="Hi I'm Ronald Torres. A Front End Developer and CS Student with experience in web development that enjoys web technologies"
+			canonical='https://nastykswed.dev/'
+			openGraph={{
+				basic: {
+					url: 'https://nastykswed.dev/',
+					type: 'website',
+					title: 'Ronald Torres',
+					image: '/preview.png',
+				},
+				optional: {
+					siteName: 'nastykswed.dev',
+					description:
+						"Hi I'm Ronald Torres. A Front End Developer and CS Student with experience in web development that enjoys web technologies",
+				},
+				image: {
+					alt: 'Ronald Torres Portfolio Preview',
+				},
+			}}
+			extend={{
+				link: [
+					{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+					{ rel: 'manifest', href: '/manifest.json' },
+				],
+				meta: [
+					{
+						content: 'width=device-width, initial-scale=1.0',
+						name: 'viewport',
+					},
+					{
+						name: 'twitter:card',
+						content: 'summary_large_image',
+					},
+					{
+						property: 'twitter:domain',
+						content: 'nastykswed.dev',
+					},
+					{
+						property: 'twitter:url',
+						content: 'https://nastykswed.dev/',
+					},
+					{
+						name: 'twitter:title',
+						content: 'Ronald Torres',
+					},
+					{
+						name: 'twitter:description',
+						content:
+							"Hi I'm Ronald Torres. A Front End Developer and CS Student with experience in web development that enjoys web technologies",
+					},
+					{
+						name: 'twitter:image',
+						content: '/preview.png',
+					},
+					{
+						name: 'application-name',
+						content: 'nastykswed.dev',
+					},
+					{
+						name: 'apple-mobile-web-app-title',
+						content: 'nastykswed.dev',
+					},
+					{
+						name: 'theme-color',
+						content: '#ffffff',
+					},
+				],
+			}}
+		/>
+		<meta http-equiv='X-UA-Compatible' content='IE=edge' />
+		<link rel='apple-touch-icon' sizes='180x180' href='/apple-touch-icon.png' />
+		<link rel='icon' type='image/png' sizes='32x32' href='/favicon-32x32.png' />
+		<link rel='icon' type='image/png' sizes='16x16' href='/favicon-16x16.png' />
+	</head>
+	<body>
+		<slot />
+		<script>
+			const theme = localStorage.getItem('data-theme');
+
+			if (theme == 'dark') {
+				document.documentElement.setAttribute('data-theme', theme);
+
+				const iconTheme = document.querySelector(
+					'.IconTheme'
+				) as HTMLImageElement;
+
+				iconTheme.src = 'assets/icons/sun.svg';
+
+				iconTheme.classList.remove('Icon--moon');
+				iconTheme.classList.add('Icon--sun');
+				iconTheme.classList.add('isActive');
+			}
+		</script>
+	</body>
+</html>

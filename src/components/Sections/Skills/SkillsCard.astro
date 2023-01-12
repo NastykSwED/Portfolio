@@ -1,0 +1,22 @@
+---
+import SkillsItem from './SkillsItem.astro';
+
+type Props = {
+	title: string;
+	skills: {
+		name: string;
+		iconPackName?: string;
+		iconName?: string;
+		localPath?: boolean
+	}[];
+};
+
+const { title, skills } = Astro.props;
+---
+
+<div class='re-SkillsCard'>
+	<h1 class='re-SkillsCard-title'>{title}</h1>
+	<div class='re-SkillsCard-wrapSkillsItems'>
+		{skills.map(skill => <SkillsItem {...skill} />)}
+	</div>
+</div>

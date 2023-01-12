@@ -6,7 +6,7 @@
 		padding: 0.2rem 0.4rem;
 		cursor: pointer;
 
-		@include mediaQuery(918px) {
+		@include maxMediaQuery(918px) {
 			display: block;
 		}
 

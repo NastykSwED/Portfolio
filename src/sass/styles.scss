@@ -1,5 +1,4 @@
 @use './base';
-@use './layouts';
 @use './components';
 @use './pages';
 @use './utils';
@@ -28,18 +27,19 @@
 	--font-semi-bold: 600;
 
 	/*=== Z index ===*/
-	--z-fixed: 100;
+	--Header-fixed: 100;
 
 	/*=== Widths ===*/
-	--mx-w-footer: 1600px;
-	--mx-w-wrapNav: 1450px;
-	--mx-w-homeSection-content: 700px;
-	--mx-w-projectsSection: 1125px;
+	--mx-w-Footer: 1600px;
+	--mx-w-Navbar: 1450px;
+	--mx-w-Home: 700px;
+	--mx-w-Project: 1125px;
+  --mx-w-Contact:1450px;
 
-	--avatar-width: 180px;
+	--Avatar-width: 180px;
 
 	/*=== Heights ===*/
-	--avatar-height: 160px;
+	--Avatar-height: 160px;
 
 	/*=== Box Shadows ===*/
 	--box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.15);

@@ -1,0 +1,55 @@
+---
+import { Icon } from 'astro-icon';
+
+interface Props {
+	title: string;
+	description: string;
+	imageUrl: string;
+	linkGitHubUrl: string;
+	linkSiteUrl: string;
+	tools: string[];
+}
+const { title, imageUrl, description, linkGitHubUrl, linkSiteUrl, tools } =
+	Astro.props;
+---
+
+<div class='re-ProjectCard'>
+	<div class='re-ProjectCard-wrapImage'>
+		<img class='re-ProjectCard-image' src={imageUrl} alt={`${title} Logo`} />
+	</div>
+
+	<div class='re-ProjectCard-content'>
+		<div class='re-ProjectCard-wrapBody'>
+			<h1 class='re-ProjectCard-Title'>{title}</h1>
+			<div class='re-ProjectCard-wrapLinks'>
+				<a
+					href={linkGitHubUrl}
+					aria-label='Find out more information about the project through this link'
+					class='re-ProjectCard-link'
+					rel='noopener noreferrer'
+					target='_blank'
+				>
+					<span class='re-ProjectCard-wrapIcon'>
+						<Icon name='uil:github-alt' class='u-lg' />
+					</span>
+				</a>
+				<a
+					href={linkSiteUrl}
+					aria-label='Find out more information about the project through this link'
+					class='re-ProjectCard-link'
+					rel='noopener noreferrer'
+					target='_blank'
+				>
+					<span class='re-ProjectCard-wrapIcon'>
+						<Icon name='ion:open-outline' class='u-lg' />
+					</span>
+				</a>
+			</div>
+		</div>
+		<p class='re-ProjectCard-Description'>{description}</p>
+
+		<div class='re-ProjectCard-wrapTools'>
+			{tools.map(tool => <span class='re-ProjectCard-tool'>{tool}</span>)}
+		</div>
+	</div>
+</div>

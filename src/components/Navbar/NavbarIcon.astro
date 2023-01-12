@@ -1,0 +1,42 @@
+<div class='re-Navbar-icon'>
+	<img
+		class='IconTheme Icon--moon'
+		src='assets/icons/moon.svg'
+		alt='Theme Icon'
+	/>
+</div>
+
+<script>
+	const themeButton = document.querySelector('.re-Navbar-icon') as HTMLElement;
+
+	const iconTheme = document.querySelector('.IconTheme') as HTMLImageElement;
+
+	const handleThemeClick = () => {
+		const theme = document.documentElement.getAttribute('data-theme');
+
+		if (theme == 'dark') {
+			document.documentElement.setAttribute('data-theme', 'light');
+
+			iconTheme.src = 'assets/icons/moon.svg';
+
+			iconTheme.classList.remove('Icon--sun');
+			iconTheme.classList.add('Icon--moon');
+			iconTheme.classList.remove('isActive');
+
+			localStorage.setItem('data-theme', 'light');
+		} else {
+			document.documentElement.setAttribute('data-theme', 'dark');
+
+			iconTheme.src = 'assets/icons/sun.svg';
+			iconTheme;
+
+			iconTheme.classList.remove('Icon--moon');
+			iconTheme.classList.add('Icon--sun');
+			iconTheme.classList.add('isActive');
+
+			localStorage.setItem('data-theme', 'dark');
+		}
+	};
+
+	themeButton.addEventListener('click', handleThemeClick);
+</script>

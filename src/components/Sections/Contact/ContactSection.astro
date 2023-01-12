@@ -1,0 +1,36 @@
+---
+import ContactCard from './ContactCard.astro';
+import { ContactForm } from './ContactForm';
+---
+
+<section class='re-Main-ContactSection' id='re-ContactSection'>
+	<div class='re-ContactSection-content'>
+		<h1 class='re-ContactSection-title'>Contact Me</h1>
+		<h2 class='re-ContactSection-subTitle'>Get in touch</h2>
+	</div>
+	<div class='re-ContactSection-bodyContent'>
+		<div class='re-ContactSection-column'>
+			<h3 class='re-ContactSection-columnTitle'>Talk to me</h3>
+			<div class='re-ContactSection-LayoutGrid'>
+				<ContactCard
+					title='Github'
+					url='https://github.com/NastykSwED'
+					icon='ant-design:github-filled'
+					iconClass='Icon--AiFillGithub u-xl'
+				/>
+				<ContactCard
+					title='LinkedIn'
+					url='https://www.linkedin.com/in/nastykswed/'
+					icon='ant-design:linkedin-filled'
+					iconClass='Icon--AiFillLinkedinu u-xl'
+				/>
+			</div>
+		</div>
+		<div class='re-ContactSection-column'>
+			<h3 class='re-ContactSection-columnTitle'>Write to me</h3>
+			<div class='re-ContactSection-wrapForm'>
+				<ContactForm client:visible />
+			</div>
+		</div>
+	</div>
+</section>

@@ -6,7 +6,7 @@
 		min-height: 4rem;
 		min-width: 5rem;
 		top: 50%;
-		left: 50%;
+		left: 100vw;
 
 		border-radius: 5px;
 		transition: 0.3s;
@@ -23,7 +23,8 @@
 		}
 
 		&.isOpen {
-			animation: openModal 0.4s ease-out forwards;
+			left: 50%;
+			transform: translate(-50%, 35%);
 		}
 
 		&-link {

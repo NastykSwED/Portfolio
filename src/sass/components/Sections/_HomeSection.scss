@@ -1,0 +1,84 @@
+@use '../../utils' as *;
+
+.re- {
+	&Main-HomeSection {
+		min-height: 100vh;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin-top: 2rem;
+		margin-bottom: 3rem;
+		padding: 0 1rem;
+		text-align: center;
+	}
+
+	&HomeSection {
+		&-avatar {
+			width: var(--Avatar-width);
+			height: var(--Avatar-height);
+			border-radius: 50%;
+			object-fit: cover;
+			animation: Bounce 1s alternate infinite;
+			box-shadow: var(--card-shadow);
+		}
+		&-content {
+			max-width: var(--mx-w-Home);
+			margin-top: 1rem;
+			color: var(--logo-clr);
+			transition: 0.3s all ease-in-out;
+		}
+		&-title {
+			max-width: max-content;
+			font-size: 2.5rem;
+			font-weight: bold;
+			padding-right: 0.5rem;
+
+			overflow: hidden;
+			border-right: 0.15em solid var(--primary-clr);
+			white-space: nowrap;
+			margin: 0 auto;
+			animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+
+			@include maxMediaQuery(464px) {
+				font-size: 1.75rem;
+			}
+
+			@include minMaxMediaQuery(464px, 1024px) {
+				font-size: 2.2rem;
+			}
+		}
+
+		&-subTitle {
+			margin-top: 1rem;
+			font-size: 1.8rem;
+			font-weight: var(--font-medium);
+
+			@include maxMediaQuery(464px) {
+				font-size: 1.25rem;
+			}
+
+			@include minMaxMediaQuery(464px, 1024px) {
+				font-size: 1.6rem;
+			}
+		}
+
+		&-description {
+			margin-top: 1rem;
+			font-size: 1.2rem;
+			font-weight: var(--font-base);
+
+			@include maxMediaQuery(464px) {
+				font-size: 0.9rem;
+			}
+
+			@include minMaxMediaQuery(464px, 1024px) {
+				font-size: 1rem;
+			}
+		}
+
+		&-wrapButton {
+			margin-top: 1.5rem;
+		}
+	}
+}

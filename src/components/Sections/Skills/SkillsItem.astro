@@ -1,0 +1,29 @@
+---
+import { Icon } from 'astro-icon';
+
+type Props = {
+	name: string;
+	iconName?: string;
+	iconPackName?: string;
+	localPath?: boolean;
+};
+
+const { iconName, iconPackName, name, localPath } = Astro.props;
+---
+
+<div class='re-SkillItem'>
+	<p class='re-SkillItem-title'>{name}</p>
+	<span class='re-SkillItem-icon'>
+		{
+			localPath ? (
+				<Icon name='vitest' class={`Icon--vitest u-xl`} />
+			) : (
+				<Icon
+					pack={iconPackName}
+					name={iconName}
+					class={`Icon--${iconName} u-xl`}
+				/>
+			)
+		}
+	</span>
+</div>

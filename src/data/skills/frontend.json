@@ -1,0 +1,62 @@
+[
+	{
+		"name": "HTML",
+		"iconPackName": "simple-icons",
+		"iconName": "html5"
+	},
+	{
+		"name": "CSS",
+		"iconPackName": "simple-icons",
+		"iconName": "css3"
+	},
+	{
+		"name": "JavaScript",
+		"iconPackName": "simple-icons",
+		"iconName": "javascript"
+	},
+	{
+		"name": "TypeScript",
+		"iconPackName": "simple-icons",
+		"iconName": "typescript"
+	},
+	{
+		"name": "Sass",
+		"iconPackName": "simple-icons",
+		"iconName": "sass"
+	},
+	{
+		"name": "Tailwind CSS",
+		"iconPackName": "simple-icons",
+		"iconName": "tailwindcss"
+	},
+	{
+		"name": "Material UI",
+		"iconPackName": "simple-icons",
+		"iconName": "mui"
+	},
+	{
+		"name": "React JS",
+		"iconPackName": "simple-icons",
+		"iconName": "react"
+	},
+	{
+		"name": "Redux",
+		"iconPackName": "simple-icons",
+		"iconName": "redux"
+	},
+	{
+		"name": "React Router",
+		"iconPackName": "simple-icons",
+		"iconName": "reactrouter"
+	},
+	{
+		"name": "Astro",
+		"iconPackName": "simple-icons",
+		"iconName": "astro"
+	},
+	{
+		"name": "NextJS",
+		"iconPackName": "simple-icons",
+		"iconName": "nextdotjs"
+	}
+]

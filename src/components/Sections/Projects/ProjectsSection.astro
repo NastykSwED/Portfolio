@@ -1,0 +1,21 @@
+---
+import projectsData from '../../../data/projects.json';
+
+import ProjectsCard from './ProjectsCard.astro';
+---
+
+<section class='re-Main-ProjectsSection' id='re-ProjectsSection'>
+	<div class='re-ProjectsSection-content'>
+		<h1 class='re-ProjectsSection-title'>Projects</h1>
+		<h2 class='re-ProjectsSection-subtitle'>Most recent work</h2>
+	</div>
+	<div class='re-ProjectsSection-wrapProjects'>
+		{
+			projectsData.map(project => (
+				<div class='re-ProjectsSection-wrapProjectCard'>
+					<ProjectsCard {...project} />
+				</div>
+			))
+		}
+	</div>
+</section>

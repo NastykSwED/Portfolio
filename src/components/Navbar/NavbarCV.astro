@@ -1,0 +1,38 @@
+---
+import Button from '../Button.astro';
+import ModalCV from '../Modals/ModalCV.astro';
+---
+
+<div class='re-Navbar-CV'>
+	<Button
+		text='CV'
+		type='button'
+		variant='primary'
+		iconName='giphy'
+		iconPackName='simple-icons'
+		iconUtility='u-base'
+	/>
+	<ModalCV />
+</div>
+
+<script>
+	const navbarCvElement = document.querySelector(
+		'.re-Navbar-CV'
+	) as HTMLElement;
+	const modalCvElement = document.querySelector('.re-ModalCV') as HTMLElement;
+
+	const observe = new IntersectionObserver(entries => {
+		if (!entries[0].isIntersecting) {
+			modalCvElement.classList.remove('isOpen');
+		}
+	});
+
+	observe.observe(navbarCvElement);
+
+	const handleCvClick = () => {
+		navbarCvElement.classList.toggle('isActive');
+		modalCvElement.classList.toggle('isOpen');
+	};
+
+	navbarCvElement.addEventListener('click', handleCvClick);
+</script>

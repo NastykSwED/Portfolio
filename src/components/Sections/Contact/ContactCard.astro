@@ -1,0 +1,36 @@
+---
+import { Icon } from 'astro-icon';
+import Button from '../../Button.astro';
+
+interface Props {
+	title: string;
+	url: string;
+	icon: string;
+	iconClass: string;
+}
+const { title, url, icon, iconClass } = Astro.props;
+---
+
+<div class='re-ContactCard'>
+	<span class='re-ContactCard-icon'>
+		<Icon name={icon} class={iconClass} />
+	</span>
+	<h4 class='re-ContactCard-title'>{title}</h4>
+	<div class='re-ContactCard-wrapButton'>
+		<a
+			class='re-ContactCard-button'
+			href={url}
+			rel='noopener noreferrer'
+			target='_blank'
+		>
+			<Button
+				text='Write Me'
+				variant='outline'
+				type='submit'
+				iconName='arrow-right-outlined'
+				iconPackName='ant-design'
+				iconUtility='u-base'
+			/>
+		</a>
+	</div>
+</div>

@@ -1,0 +1,24 @@
+---
+import SkillsCard from './SkillsCard.astro';
+
+import frontendSkills from '../../../data/skills/frontend.json';
+import backendSkills from '../../../data/skills/backend.json';
+import toolSkills from '../../../data/skills/tools.json';
+---
+
+<section class='re-Main-SkillsSection' id='re-SkillsSection'>
+	<div class='re-SkillsSection-content'>
+		<h1 class='re-SkillsSection-title'>Skills</h1>
+	</div>
+	<div class='re-SkillsSection-wrapSkills'>
+		<div class='re-SkillsSection-wrapSkillCard'>
+			<SkillsCard title='Frontend' skills={frontendSkills} />
+		</div>
+		<div class='re-SkillsSection-wrapSkillCard'>
+			<SkillsCard title='Tools' skills={toolSkills} />
+		</div>
+		<div class='re-SkillsSection-wrapSkillCard'>
+			<SkillsCard title='Backend' skills={backendSkills} />
+		</div>
+	</div>
+</section>

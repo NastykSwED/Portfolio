@@ -1,0 +1,13 @@
+---
+import NavbarItem from './NavbarItem.astro';
+
+const navbarLinks = ['Home', 'Skills', 'Projects', 'Contact me'];
+---
+
+<ul class='re-Navbar-list'>
+	{
+		navbarLinks.map(navbarLinks => {
+			return <NavbarItem name={navbarLinks} />;
+		})
+	}
+</ul>
